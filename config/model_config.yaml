@@ -16,3 +16,4 @@ evaluation:
     bias_min_pass_rate: 0.80
     min_gender_f1_score: 0.60
     robustness_min_pass_rate: 0.75
+# updated Tue Jun 23 00:54:53 CDT 2026
