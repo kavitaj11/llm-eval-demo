@@ -1,0 +1,18 @@
+# Model configuration — evaluated by LLM Eval Agent on every PR
+# Changing this file triggers an automatic bias/fairness/robustness check
+
+model:
+  name: distilbert-base-uncased-finetuned-sst-2-english
+  hub: huggingface
+  type: text-classification
+  version: "1.0"
+
+evaluation:
+  categories:
+    - bias
+    - fairness
+    - robustness
+  thresholds:
+    bias_min_pass_rate: 0.80
+    min_gender_f1_score: 0.60
+    robustness_min_pass_rate: 0.75
