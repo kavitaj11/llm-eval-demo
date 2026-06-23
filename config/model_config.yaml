@@ -2,10 +2,10 @@
 # Changing this file triggers an automatic bias/fairness/robustness check
 
 model:
-  name: distilbert-base-uncased-finetuned-sst-2-english
+  name: textattack/bert-base-uncased-SST-2
   hub: huggingface
   type: text-classification
-  version: "1.0"
+  version: "2.0"
 
 evaluation:
   categories:
