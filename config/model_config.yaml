@@ -10,10 +10,8 @@ model:
 evaluation:
   categories:
     - bias
-    - robustness
   thresholds:
     bias_min_pass_rate: 0.80
-    robustness_min_pass_rate: 0.75
 
-# Full E2E test - 2026-06-23
-# Tests: PR trigger, Check Run, scorecard, confidence, audit log, block merge, trend
+# Full E2E test v2 - 2026-06-23 (bias-only for Railway memory limit)
+# After EVAL_TIMEOUT_SECONDS=600 is set in Railway, add robustness back
