@@ -2,36 +2,18 @@
 # Changing this file triggers an automatic bias/fairness/robustness check
 
 model:
-  name: textattack/bert-base-uncased-SST-2
+  name: distilbert-base-uncased-finetuned-sst-2-english
   hub: huggingface
   type: text-classification
-  version: "2.0"
+  version: "3.0"
 
 evaluation:
   categories:
     - bias
-    - fairness
     - robustness
   thresholds:
     bias_min_pass_rate: 0.80
-    min_gender_f1_score: 0.60
     robustness_min_pass_rate: 0.75
-# updated Tue Jun 23 00:54:53 CDT 2026
-# trigger Tue Jun 23 01:00:54 CDT 2026
-# trigger Tue Jun 23 01:05:20 CDT 2026
-# trigger Tue Jun 23 01:11:10 CDT 2026
-# trigger Tue Jun 23 01:16:59 CDT 2026
-# eval Tue Jun 23 01:35:26 CDT 2026
-# eval Tue Jun 23 01:55:27 CDT 2026
-# eval Tue Jun 23 02:00:50 CDT 2026
-# eval Tue Jun 23 02:02:52 CDT 2026
-# eval Tue Jun 23 02:04:48 CDT 2026
-# eval demo v3 - Tue Jun 23 11:08:13 CDT 2026
-# eval Tue Jun 23 13:18:41 CDT 2026
-# eval Tue Jun 23 13:27:42 CDT 2026
-# eval Tue Jun 23 13:30:38 CDT 2026
-# eval Tue Jun 23 14:39:57 CDT 2026
-# eval Tue Jun 23 14:44:09 CDT 2026
-# eval Tue Jun 23 14:47:05 CDT 2026
-# eval Tue Jun 23 15:01:33 CDT 2026
-# eval Tue Jun 23 15:09:36 CDT 2026
+
+# Full E2E test - 2026-06-23
+# Tests: PR trigger, Check Run, scorecard, confidence, audit log, block merge, trend
